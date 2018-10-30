@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1"/>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/getrequest.js"></script>
+
+</head>
+<body>
+<div class="container">
+
+    <div class="starter-template">
+        <h2>
+            <span th:text="${message}"></span>
+        </h2>
+    </div>
+
+</div>
+<div class="container">
+    <div class="col-sm-7" style="margin: 20px 0px 20px 0px">
+        <button id="getTopDrivers" type="button" class="btn btn-primary"><span th:text="${driverRankingMsg}"/></button>
+        <div id="getTopDriversResult" style="padding: 20px 10px 20px 50px">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="col-sm-7" style="margin: 20px 0px 20px 0px">
+        <button id="getTopTeams" type="button" class="btn btn-primary"><span th:text="${teamRankingMsg}"/></button>
+        <div id="getTopTeamsResult" style="padding: 20px 10px 20px 50px">
+        </div>
+    </div>
+</div>
+</body>
+</html>
