@@ -1,8 +1,9 @@
 # FOneWebApplicationTest
 Lombok plugin is needed.
-maven is needed
-java 1.8 is needed
-intellj is recommended
+maven is needed.
+java 1.8 is needed.
+intellj is recommended.
+Import it as a maven project
 
 Steps to run the application
 mvn clean package
